@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>caryzu's portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#">caryzu's portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home" aria-label="Hero section">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Caryzu's portfolio which no one asked!!1!11!</h1>
+    </div>
+  </section>
+
+  <main>
+    
+    <section id="about" class="about container">
+      <div class="about-inner">
+        <div class="profile">
+            <img class="profile-photo" src="images/icon.png" alt="Profile icon">
+          </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hi, my name is Caryzu, and I am a render maker on roblox studio :D
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="portfolio" class="portfolio container">
+      <h2>Portfolio</h2>
+      <div class="gallery" aria-live="polite">
+        <button class="gallery-item" data-title="Render 1" aria-label="Open render 1">
+          <img src="images/render1.png" alt="Render 1" class="gallery-img">
+        </button>
+        <button class="gallery-item" data-title="Render 2" aria-label="Open render 2">
+          <img src="images/render2.png" alt="Render 2" class="gallery-img">
+        </button>
+        <button class="gallery-item" data-title="Render 3" aria-label="Open render 3">
+          <img src="images/render3.png" alt="Render 3" class="gallery-img">
+        </button>
+        <button class="gallery-item" data-title="Render 4" aria-label="Open render 4">
+          <img src="images/render4.png" alt="Render 4" class="gallery-img">
+        </button>
+        <button class="gallery-item" data-title="Render 5" aria-label="Open render 5">
+          <img src="images/render5.png" alt="Render 5" class="gallery-img">
+        </button>
+        <button class="gallery-item" data-title="Render 6" aria-label="Open render 6">
+          <img src="images/render6.png" alt="Render 6" class="gallery-img">
+        </button>
+        
+      </div>
+    </section>
+
+    
+  </main>
+
+  <!-- LIGHTBOX / MODAL -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-content">
+        <!-- The image element below will be filled with the clicked gallery image's src -->
+        <div class="modal-image" id="modalImage"><img id="modalImg" src="" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
